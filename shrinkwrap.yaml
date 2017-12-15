@@ -1,4 +1,5 @@
 dependencies:
+  fs-extra: 5.0.0
   puppeteer: 0.13.0
 packages:
   /agent-base/4.1.2:
@@ -79,6 +80,14 @@ packages:
     dev: false
     resolution:
       integrity: sha1-i1vL2ewyfFBBv5qwI/1nUPEXfmU=
+  /fs-extra/5.0.0:
+    dependencies:
+      graceful-fs: 4.1.11
+      jsonfile: 4.0.0
+      universalify: 0.1.1
+    dev: false
+    resolution:
+      integrity: sha512-66Pm4RYbjzdyeuqudYqhFiNBbCIuI9kgRqLPSHIlXHidW8NIQtVdkM1yeZ4lXwuhbTETv3EUGMNHAAw6hiundQ==
   /fs.realpath/1.0.0:
     dev: false
     resolution:
@@ -94,6 +103,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-MJTUg1kjuLeQCJ+ccE4Vpa6kKVXkPYJ2mOCQyUuKLcLQsdrMCpBPUi8qVE6+YuaJkozeA9NusTAw3hLr8Xe5EQ==
+  /graceful-fs/4.1.11:
+    dev: false
+    engines:
+      node: '>=0.4.0'
+    resolution:
+      integrity: sha1-Dovf5NHduIVNZOBOp8AOKgJuVlg=
   /https-proxy-agent/2.1.1:
     dependencies:
       agent-base: 4.1.2
@@ -116,6 +131,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
+  /jsonfile/4.0.0:
+    dev: false
+    optionalDependencies:
+      graceful-fs: 4.1.11
+    resolution:
+      integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   /mime/1.6.0:
     dev: false
     engines:
@@ -223,6 +244,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-UIEXBNeYmKptWH6z8ZnqTeS8fV74zG0/eRU9VGkpzz+LIJNs8W/zM/L+7ctCkRrgbNnnR0xxw4bKOr0cW0N0Og==
+  /universalify/0.1.1:
+    dev: false
+    resolution:
+      integrity: sha1-+nG63UQ3r0wUiEHjs7Fl+enlkLc=
   /util-deprecate/1.0.2:
     dev: false
     resolution:
@@ -249,4 +274,5 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 4
 shrinkwrapVersion: 3
 specifiers:
+  fs-extra: ^5.0.0
   puppeteer: ^0.13.0
