@@ -11,7 +11,7 @@ async function screenshotElement(site, selector) {
   const elNav = await page.$(selector);
   if (elNav) {
     let domainSansProtocol = site.substring(site.indexOf('://') + 3);
-    let directory = `./screenshots/${domainSansProtocol}`;
+    let directory = path.normalize(`./screenshots/${domainSansProtocol}`);
     await fs.ensureDir(directory)
 
     let prefix = `${selector} - `;
