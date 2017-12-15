@@ -1,5 +1,6 @@
 dependencies:
   fs-extra: 5.0.0
+  pixelmatch: 4.0.2
   puppeteer: 0.13.0
 packages:
   /agent-base/4.1.2:
@@ -179,6 +180,18 @@ packages:
     dev: false
     resolution:
       integrity: sha1-elfrVQpng/kRUzH89GY9XI4AelA=
+  /pixelmatch/4.0.2:
+    dependencies:
+      pngjs: 3.3.1
+    dev: false
+    resolution:
+      integrity: sha1-j0fc7FARtHe2fbA8JDvB8wheiFQ=
+  /pngjs/3.3.1:
+    dev: false
+    engines:
+      node: '>=4.0.0'
+    resolution:
+      integrity: sha512-ggXCTsqHRIsGMkHlCEhbHhUmNTA2r1lpkE0NL4Q9S8spkXbm4vE9TVmPso2AGYn90Gltdz8W5CyzhcIGg2Gejg==
   /process-nextick-args/1.0.7:
     dev: false
     resolution:
@@ -275,4 +288,5 @@ shrinkwrapMinorVersion: 4
 shrinkwrapVersion: 3
 specifiers:
   fs-extra: ^5.0.0
+  pixelmatch: ^4.0.2
   puppeteer: ^0.13.0
